@@ -51,4 +51,7 @@ class HuffmanSuite extends FunSuite {
     }
   }
 
+  test("createCodeTree(someText)' gives an optimal encoding, the number of bits when encoding 'someText' is minimal") {
+    assert(createCodeTree(List('h', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd')) === 0)
+  }
 }
